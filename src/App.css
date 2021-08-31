@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-style: normal;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  color: #222c35;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.link {
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.link::before {
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: inherit;
+  transition: 0.2s;
+}
+
+.link:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+.btn {
+  transition: all .5s;
+  cursor: pointer;
+
+
+
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.Header .Nav {
+  width: 100%;
+  max-width: 600px;
+}
+
+.Header .Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header ul {
+  padding: 40px 0;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Main .Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Logo {
+  font-size: 36px;
+  color: #3983c4;
+}
+
+.content {
+  width: 100%;
+}
+
+.content img {
+  width: 100%;
+  height: 200px;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile img {
+  max-width: 110px;
+  height: 100px;
+}
+
+.footer {
+  padding: 300px;
+}
