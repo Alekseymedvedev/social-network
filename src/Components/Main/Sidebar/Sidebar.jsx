@@ -4,10 +4,10 @@ const Sidebar = () => {
             <nav>
                 <ul>
                     <li className="list">
-                        <a href="№">Профиль</a>
+                        <a href="/profile">Профиль</a>
                     </li>
                     <li className="list">
-                        <a href="№">Сообщения</a>
+                        <a href="/messages">Сообщения</a>
                     </li>
                     <li className="list">
                         <a href="№">Новости</a>
