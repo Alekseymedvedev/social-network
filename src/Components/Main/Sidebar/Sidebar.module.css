@@ -1,9 +1,6 @@
-.profile {
-  display: flex;
-  align-items: flex-start;
+.active{
+  color: red;
 }
-
-.profile img {
-  max-width: 110px;
-  height: 100px;
+.list{
+  padding: 20px;
 }
