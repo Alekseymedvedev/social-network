@@ -11,13 +11,13 @@ const Sidebar = () => {
                         <NavLink to="/profile" activeClassName={classes.active}>Профиль</NavLink>
                     </li>
                     <li className={classes.list}>
-                        <NavLink to="/messages" activeClassName={classes.active}>Сообщения</NavLink>
+                        <NavLink to="/dialogs" activeClassName={classes.active}>Сообщения</NavLink>
                     </li>
                     <li className={classes.list}>
-                        <NavLink to="/ffff" activeClassName={classes.active}>Новости</NavLink>
+                        <NavLink to="/news" activeClassName={classes.active}>Новости</NavLink>
                     </li>
                     <li className={classes.list}>
-                        <NavLink to="/messages" activeClassName={classes.active}>настройка</NavLink>
+                        <NavLink to="/settings" activeClassName={classes.active}>Настройки</NavLink>
                     </li>
                 </ul>
             </nav>

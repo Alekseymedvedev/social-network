@@ -1,0 +1,27 @@
+
+.dialogs{
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  background: #4A67FF;
+  border-radius: 8px;
+}
+.dialogs .active{
+  font-weight: 700;
+}
+.inner{
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.inner a{
+  padding: 10px 0;
+  color: #fff;
+}
+.message{
+  margin-bottom: 10px;
+  padding: 5px 30px;
+  background-color: #fff;
+  border-radius: 3px;
+}

@@ -1,9 +1,0 @@
-.profile {
-  display: flex;
-  align-items: flex-start;
-}
-
-.profile img {
-  max-width: 110px;
-  height: 100px;
-}

@@ -1,0 +1,20 @@
+.post{
+  display: flex;
+  margin-top: 30px;
+}
+.posts input{
+  padding: 10px 20px;
+}
+.posts button{
+  padding: 10px 20px;
+}
+.post img{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.text{
+  max-width: 620px;
+  color: #fff;
+}

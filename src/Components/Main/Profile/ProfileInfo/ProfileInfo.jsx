@@ -1,12 +1,12 @@
 import React from "react";
-import classes from "./Profile.module.css";
+import classes from "./ProfileInfo.module.css";
 
-const Profile = () => {
+const ProfileInfo = () => {
     return (
-        <div className='content'>
-            <img src='https://avatars.mds.yandex.net/get-zen_doc/3453969/pub_5f0d5a879a510533f2a305ad_5f0d5d98ffa7730389fb55d2/scale_1200' alt='' />
+        <div className={classes.con}>
+            <img className={classes.img} src='https://avatars.mds.yandex.net/get-zen_doc/3453969/pub_5f0d5a879a510533f2a305ad_5f0d5d98ffa7730389fb55d2/scale_1200' alt='' />
 
-            <div className={classes.profile}>
+            <div className={classes.profileInfo}>
                 <img src='https://s1.1zoom.ru/big3/777/Big_cats_Snow_leopards_476037.jpg' alt='' />
                 <div className={classes.inner}>
                     <div className={classes.contacts}>Имя: Алексей</div>
@@ -17,4 +17,4 @@ const Profile = () => {
         </div>
     );
 };
-export default Profile;
+export default ProfileInfo;

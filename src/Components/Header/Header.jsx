@@ -1,4 +1,4 @@
-import React from "react";
+
 import classes from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const Header = () => {
                     </form>
                     <div className={classes.cabinet}>
                         <img src="https://s1.1zoom.ru/big3/777/Big_cats_Snow_leopards_476037.jpg" alt="" />
-                        <NavLink className="link" to="cabinet">Логин</NavLink>
+                        <NavLink className="link" to="/cabinet">Алексей</NavLink>
                     </div>
                 </div>
             </div>

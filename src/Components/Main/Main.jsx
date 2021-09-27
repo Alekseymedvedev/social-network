@@ -1,6 +1,6 @@
 import React from "react";
-import Profile from "./Home/Profile/Profile";
-import Messages from "./Home/Messages/Messages";
+import Profile from "./Profile/Profile";
+import Dialogs from "./Dialogs/Dialogs";
 import Sidebar from "./Sidebar/Sidebar";
 import {  Route } from "react-router-dom";
 const Main = () => {
@@ -9,7 +9,7 @@ const Main = () => {
             <div className='container'>
                 <Sidebar />
                 <Route path="/profile" component={Profile} />
-                <Route path="/messages" component={Messages} />
+                <Route path="/dialogs" component={Dialogs} />
             
             </div>
         </main>
