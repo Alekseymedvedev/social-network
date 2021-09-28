@@ -1,18 +1,37 @@
+import Sorting from "../../Sorting/Sorting";
+import Post from "./Post/Post";
 import classes from "./Posts.module.css";
+import React from 'react';
 
 
-const Posts = () => {
+
+
+const Posts = (props) => {
+
+    let post = props.postsArr.map(p => <Post id={p.id} like={p.like} time={p.time} img={p.img} text={p.text} />)
+    
+    let newPostItem = React.createRef();
+
+    let addNewPost = () => {
+        props.addPost()
+    }
+
+    let onPostChange = () => {
+        let text = newPostItem.current.value;
+        props.updateNewPost(text);
+    }
+
+    
+
     return (
         <div className={classes.posts}>
-            <input type={classes.text} />
-            <button>добавить</button>
-            <div className={classes.post}>
-                <img src="https://s1.1zoom.ru/big3/777/Big_cats_Snow_leopards_476037.jpg" alt="" />
-                <div className={classes.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, vel magnam!
-                    Consectetur voluptatum consequuntur fugiat labore possimus reiciendis tenetur impedit culpa expedita
-                    inventore, reprehenderit sint fugit optio repudiandae, iusto eius.
-                </div>
-            </div>
+            <form className={classes.form}>
+                <textarea ref={newPostItem} value={props.newPostText} onChange={onPostChange} cols="30" rows="10"></textarea>
+                <button type="button" onClick={addNewPost} >добавить</button>
+            </form>
+            <div className={classes.title}>Ваши посты</div>
+            <Sorting />
+            {post}
 
         </div>
     );

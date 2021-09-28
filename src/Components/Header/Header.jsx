@@ -8,7 +8,7 @@ const Header = () => {
             <div className='container'>
                 <div className={classes.inner}>
                     <div className={classes.logo}>
-                        <NavLink to='/'>Ясоцсеть</NavLink>
+                        <NavLink to='/'>Ясоцсеть34</NavLink>
                     </div>
                     <form className={classes.form}>
                         <label className={classes.label}>
@@ -17,7 +17,7 @@ const Header = () => {
                     </form>
                     <div className={classes.cabinet}>
                         <img src="https://s1.1zoom.ru/big3/777/Big_cats_Snow_leopards_476037.jpg" alt="" />
-                        <NavLink className="link" to="/cabinet">Алексей</NavLink>
+                        <NavLink className={classes.link} to="/cabinet">Алексей</NavLink>
                     </div>
                 </div>
             </div>

@@ -1,45 +1,8 @@
-.inner {
-  margin-bottom: 30px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #4A67FF;
+.footer{
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  max-width: 1140px;
+  background-color: #4A67FF;
   border-radius: 8px;
-}
-
-.header ul {
-  padding: 40px 0;
-  max-width: 600px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo a {
-  font-size: 36px;
-  color: #fff;
-}
-
-.cabinet {
-  max-width: 150px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.cabinet img {
-  width: 30px;
-  height: 30px;
-  display: block;
-  margin-right: 15px;
-  border-radius: 50%;
-}
-
-.form input {
-  padding: 10px 20px;
-  max-width: 300px;
-  width: 100%;
-  border-radius: 5px;
 }

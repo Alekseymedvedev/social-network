@@ -10,8 +10,8 @@ const ProfileInfo = () => {
                 <img src='https://s1.1zoom.ru/big3/777/Big_cats_Snow_leopards_476037.jpg' alt='' />
                 <div className={classes.inner}>
                     <div className={classes.contacts}>Имя: Алексей</div>
-                    <div className={classes.contacts}>Дата создания: 3век до н.э.</div>
-                    <div className={classes.contacts}>Контакты: телеграм</div>
+                    <div className={classes.contacts}>Дата создания: 3 век до н.э.</div>
+                    <div className={classes.contacts}>Контакты: @AlekseyMedvedev152</div>
                 </div>
             </div>
         </div>

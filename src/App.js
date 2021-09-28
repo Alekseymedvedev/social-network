@@ -2,17 +2,18 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import { BrowserRouter } from "react-router-dom";
+import Footer from './Components/Footer/Header/Footer';
 
-function App() {
+
+
+function App(props) {
   return (
     <BrowserRouter>
-      <div className="App">
-          <Header />
-          <Main />
-        <footer className="footer">
-
-        </footer>
-      </div>
+    <div className="App">
+        <Header />
+        <Main state={props.state} addPost={props.addPost}updateNewPost={props.updateNewPost} />
+        <Footer />
+    </div>
     </BrowserRouter>
   );
 }

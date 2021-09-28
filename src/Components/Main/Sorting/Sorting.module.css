@@ -1,0 +1,10 @@
+.title {
+  margin-right: 15px;
+  color: #fff;
+  font-weight: 900;
+}
+.name{
+  margin-right: 10px;
+  color: #fff;
+  font-weight: 700;cursor: pointer;
+}

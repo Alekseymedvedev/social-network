@@ -1,20 +1,36 @@
-.post{
-  display: flex;
-  margin-top: 30px;
-}
-.posts input{
+.posts input {
   padding: 10px 20px;
 }
-.posts button{
+
+.posts button {
   padding: 10px 20px;
 }
-.post img{
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  border-radius: 50%;
+.title{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
 }
-.text{
-  max-width: 620px;
-  color: #fff;
+.form {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
+
+.form button {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form textarea {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
