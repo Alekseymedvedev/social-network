@@ -26,7 +26,7 @@ let state = {
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis explicabo quidem natus, debitis esse voluptate eligendi dignissimos impedit, eaque id sapiente recusandae repellat ipsam quia exercitationem labore quisquam corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit.'
       },
     ],
-    newPostText: 'afdfagff'
+    newPostText: ''
   },
 
   dialogsPage: {

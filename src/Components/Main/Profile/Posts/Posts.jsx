@@ -9,19 +9,26 @@ import React from 'react';
 const Posts = (props) => {
 
     let post = props.postsArr.map(p => <Post id={p.id} like={p.like} time={p.time} img={p.img} text={p.text} />)
-    
-    let newPostItem = React.createRef();
 
+    let newPostItem = React.createRef();
     let addNewPost = () => {
-        props.addPost()
+        if (newPostItem != '') {
+
+            props.addPost()
+        }
     }
+
 
     let onPostChange = () => {
         let text = newPostItem.current.value;
-        props.updateNewPost(text);
+        if (text != '') {
+            props.updateNewPost(text);
+        }
+
+
     }
 
-    
+
 
     return (
         <div className={classes.posts}>

@@ -11,7 +11,7 @@ const DialogItem = (props) => {
 }
 const Messages = (props) => {
     return (
-        <div className={classes.message} id={props.id}>{props.message}</div>
+        <div className={`${classes.message} ${classes.yourMessage}`} id={props.id}>{props.message}</div>
     )
 }
 
