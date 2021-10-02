@@ -11,7 +11,7 @@ function App(props) {
     <BrowserRouter>
     <div className="App">
         <Header />
-        <Main state={props.state} addPost={props.addPost}updateNewPost={props.updateNewPost} />
+        <Main state={props.state} dispatch ={props.dispatch } />
         <Footer />
     </div>
     </BrowserRouter>

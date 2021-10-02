@@ -11,7 +11,7 @@ const Main = (props) => {
 
             <div className='container'>
                 <Sidebar />
-                <Route path="/profile" render={() => <Profile state={props.state.profilePage} addPost={props.addPost} updateNewPost={props.updateNewPost} />} />
+                <Route path="/profile" render={() => <Profile state={props.state.profilePage} dispatch ={props.dispatch } />} />
                 <Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage} />} />
 
             </div>

@@ -12,20 +12,20 @@ const Posts = (props) => {
 
     let newPostItem = React.createRef();
     let addNewPost = () => {
-        if (newPostItem != '') {
 
-            props.addPost()
+        if (newPostItem.current.value != '') {
+            props.dispatch ({type:'ADD-POST'}) 
+        }else{
+            alert('Введите собщение')
         }
+        
     }
 
-
     let onPostChange = () => {
+
         let text = newPostItem.current.value;
-        if (text != '') {
-            props.updateNewPost(text);
-        }
-
-
+        
+        props.dispatch ({type:'UPDATE-NEW-POST',newPostText:text});
     }
 
 

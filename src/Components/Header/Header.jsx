@@ -8,7 +8,7 @@ const Header = () => {
             <div className='container'>
                 <div className={classes.inner}>
                     <div className={classes.logo}>
-                        <NavLink to='/'>Ясоцсеть34</NavLink>
+                        <NavLink to='/'>Ясоцсеть37</NavLink>
                     </div>
                     <form className={classes.form}>
                         <label className={classes.label}>
