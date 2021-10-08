@@ -21,6 +21,9 @@ const Dialogs = (props) => {
 let dialogElements = props.state.dialogs.map(d => <DialogItem id={d.id} name={d.name} />)
 let messagesElements = props.state.messages.map(m => <Messages id={m.id} message={m.message} />)
 
+let addMessage =()=>{
+
+}
     return (
          
         <div className={classes.dialogs}>
@@ -32,7 +35,8 @@ let messagesElements = props.state.messages.map(m => <Messages id={m.id} message
                 {messagesElements}
 
             </div>
-      
+            <textarea cols="30" rows="5" ></textarea>
+            <button onClick={addMessage}>Отправить</button>
         </div>
         
     );

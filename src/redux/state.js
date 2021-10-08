@@ -73,15 +73,15 @@ let store = {
     }
 
   },
-  getState(){
+  getState() {
     return this._state;
   },
-  
+
   subscribe(observer) {
     renderThree = observer;
   },
-  dispatch (action){
-    if(action.type==='ADD-POST'){
+  dispatch(action) {
+    if (action.type === 'ADD-POST') {
       let newPost = {
         id: 15,
         like: 0,
@@ -92,7 +92,7 @@ let store = {
       this._state.profilePage.postsArr.push(newPost);
       this._state.profilePage.newPostText = ''
       renderThree(this._state);
-    } else if(action.type ==='UPDATE-NEW-POST'){
+    } else if (action.type === 'UPDATE-NEW-POST') {
       this._state.profilePage.newPostText = action.newPostText;
       renderThree(this._state);
     }
@@ -100,4 +100,15 @@ let store = {
 }
 
 let renderThree = () => {}
+export  const addPostActionCreatore = () => {
+  return {
+    type: 'ADD-POST'
+  }
+}
+export const newPostTextActionCreator = (text) => {
+  return {
+    type: 'UPDATE-NEW-POST',
+    newPostText: text
+  }
+}
 export default store;
